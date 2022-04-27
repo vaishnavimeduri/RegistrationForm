@@ -20,7 +20,7 @@ function validate(response) {
   let state = document.getElementById("state").value;
   let zipCode = document.getElementById("zipCode").value;
   let TnCcheckbox = document.getElementById("TnCcheckbox").checked;
-  
+
   switch (response) {
     case "firstname": {
       if (firstName === "") {
@@ -109,25 +109,24 @@ function validate(response) {
 }
 
 function validateall() {
-    validate('firstname')
-    validate('lastname')
-    validate('email')
-    validate('phone')
-    validate('state')
-    validate('zipcode')
-    validate('tnccheckbox')
-    if(document.getElementById("firstNameInvalid").style.display === "none"&&
-    document.getElementById("lastNameInvalid").style.display === "none"&&
-    document.getElementById("emailInvalid").style.display === "none"&&
-    document.getElementById("phoneInvalid").style.display === "none"&&
-    document.getElementById("zipCodeInvalid").style.display === "none"&&
-    document.getElementById("tncInvalid").style.display === "none"&&
-    document.getElementById("stateInvalid").style.display === "none"){
-        window.open("thankyou.html","_self");
-    }
-
-    
-
+  validate("firstname");
+  validate("lastname");
+  validate("email");
+  validate("phone");
+  validate("state");
+  validate("zipcode");
+  validate("tnccheckbox");
+  if (
+    document.getElementById("firstNameInvalid").style.display === "none" &&
+    document.getElementById("lastNameInvalid").style.display === "none" &&
+    document.getElementById("emailInvalid").style.display === "none" &&
+    document.getElementById("phoneInvalid").style.display === "none" &&
+    document.getElementById("zipCodeInvalid").style.display === "none" &&
+    document.getElementById("tncInvalid").style.display === "none" &&
+    document.getElementById("stateInvalid").style.display === "none"
+  ) {
+    window.open("thankyou.html", "_self");
+  }
 }
 
 function refresh() {
@@ -145,14 +144,11 @@ function refresh() {
   document.getElementById("stateValid").style.display = "none";
   document.getElementById("stateInvalid").style.display = "none";
 
-  document.getElementById("firstName").value=''
-  document.getElementById("lastName").value=''
-  document.getElementById("email").value=''
-  document.getElementById("phoneNumber").value=''
-  document.getElementById("state").value=''
-  document.getElementById("zipCode").value=''
-  document.getElementById("TnCcheckbox").checked=false
-
-
-
+  document.getElementById("firstName").value = "";
+  document.getElementById("lastName").value = "";
+  document.getElementById("email").value = "";
+  document.getElementById("phoneNumber").value = "";
+  document.getElementById("state").value = "";
+  document.getElementById("zipCode").value = "";
+  document.getElementById("TnCcheckbox").checked = false;
 }

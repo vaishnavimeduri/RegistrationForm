@@ -36,7 +36,13 @@
         <form class="row g-3 needs-validation" novalidate autocomplete="off">
           <div class="col-md-4">
             <label for="firstName" class="form-label">First name</label>
-            <input type="text" class="form-control" id="firstName"  onkeyup="validate('firstname')" required />
+            <input
+              type="text"
+              class="form-control"
+              id="firstName"
+              onkeyup="validate('firstname')"
+              required
+            />
             <div class="valid-feedback" id="firstNameValid">Looks good!</div>
             <div class="invalid-feedback" id="firstNameInvalid">
               Please enter a valid FirstName.
@@ -44,7 +50,13 @@
           </div>
           <div class="col-md-4">
             <label for="lastName" class="form-label">Last name</label>
-            <input type="text" class="form-control" id="lastName" onkeyup="validate('lastname')" required />
+            <input
+              type="text"
+              class="form-control"
+              id="lastName"
+              onkeyup="validate('lastname')"
+              required
+            />
             <div class="valid-feedback" id="lastNameValid">Looks good!</div>
             <div class="invalid-feedback" id="lastNameInvalid">
               Please enter a valid LastName.
@@ -86,7 +98,12 @@
           </div>
           <div class="col-md-4">
             <label for="state" class="form-label">State</label>
-            <select class="form-select" id="state" onclick="validate('state')" required>
+            <select
+              class="form-select"
+              id="state"
+              onclick="validate('state')"
+              required
+            >
               <option selected disabled value="">Choose...</option>
               <option value="Andhra Pradesh">Andhra Pradesh</option>
               <option value="Andaman and Nicobar Islands">
@@ -136,7 +153,13 @@
           </div>
           <div class="col-md-4">
             <label for="zipCode" class="form-label">Zip</label>
-            <input type="text" class="form-control" id="zipCode" onkeyup="validate('zipcode')" required />
+            <input
+              type="text"
+              class="form-control"
+              id="zipCode"
+              onkeyup="validate('zipcode')"
+              required
+            />
             <div class="valid-feedback" id="zipCodeValid">Looks good!</div>
             <div class="invalid-feedback" id="zipCodeInvalid">
               Please provide a valid zip.
@@ -161,11 +184,15 @@
             </div>
           </div>
           <div class="col-12">
-            <button class="btn btn-primary" type="button" onclick="validateall()">
+            <button
+              class="btn btn-primary"
+              type="button"
+              onclick="validateall()"
+            >
               Submit form
             </button>
             <button class="btn btn-primary" type="button" onclick="refresh()">
-             Clear Responses
+              Clear Responses
             </button>
           </div>
         </form>
