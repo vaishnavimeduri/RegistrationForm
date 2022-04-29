@@ -1,7 +1,15 @@
 .registration-form {
     width: 80%;
     margin: 10% auto;
-    border: 2px solid black;
     border-radius: 20px;
     padding: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: whitesmoke;
+}
+body{
+    background-color: lightpink;
+}
+.buttoncolor{
+    background-color: steelblue;
+    color: whitesmoke;
 }
